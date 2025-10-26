@@ -61,3 +61,136 @@
     </div>
       </div>
   </section>
+
+  <style>
+    /* ---------- SERVICES ---------- */
+
+.services-section {
+  text-align: center;
+  padding: 80px 60px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.services-section h3 {
+  color: #9b5f74;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.services-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #3a2a32;
+  margin-bottom: 12px;
+}
+
+.services-section p.subtitle {
+  color: #777;
+  margin-bottom: 50px;
+  font-size: 15px;
+}
+
+.services-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  max-width: 385px;
+  max-height: 535px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  padding: 18px 20px 22px;
+  text-align: left;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #9b5f74;
+  margin-bottom: 8px;
+}
+
+.rating span:last-child {
+  color: #333;
+  font-weight: 600;
+}
+
+.card h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.address {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.address::before {
+  content: "📍";
+  font-size: 14px;
+  color: #9b5f74;
+}
+
+.btn-book {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background: #fff;
+  color: #9b5f74;
+  font-weight: 600;
+  border: 1px solid #9b5f74;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-book:hover {
+  background: #9b5f74;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services-section {
+    padding: 60px 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 360px;
+  }
+}
+</style>
