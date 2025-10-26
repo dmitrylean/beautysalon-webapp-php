@@ -11,7 +11,9 @@
   <!-- HEADER -->
   <header>
     <div class="logo">
+       <a href="/">
       <img src="../assets/svg/logo.svg" alt="Stylicle Logo" >
+</a>
     </div>
 
     <nav>

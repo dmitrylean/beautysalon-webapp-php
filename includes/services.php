@@ -71,6 +71,7 @@ function Services( string $title, string $subtitle ): string {
 /* ---------- SERVICES ---------- */
 
 .services-section {
+    background: #fff;
     text-align: center;
     padding: 80px 60px;
     max-width: 1440px;

@@ -8,6 +8,10 @@ echo Hero(
 ?>
 
 <?php
+include __DIR__ . '/../includes/hero-services.php';
+?>
+
+<?php
 require_once __DIR__ . '/../includes/services.php';
 echo Services(
     'Recommended',
