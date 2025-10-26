@@ -1,6 +1,8 @@
+# Hide the Hack
+*.hack linguist-detectable=false
+
+# Enable the main languages
 *.php linguist-detectable=true
 *.css linguist-detectable=true
 *.js linguist-detectable=true
 *.sql linguist-detectable=true
-*.hack linguist-detectable=false
-*.* linguist-detectable=false
