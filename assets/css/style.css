@@ -1,0 +1,251 @@
+html, body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: #f6f6f6;
+  color: #333;
+
+  font-family: 'Poppins';
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400px;
+  margin-bottom: 12px;
+
+  color: #403E3B;
+}
+
+/* ---------- NAVIGATION ---------- */
+header {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo span {
+  color: #9b5f74;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav ul li a:hover {
+  color: #9b5f74;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-right select {
+  border: none;
+  background: transparent;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-login,
+.btn-signup {
+  padding: 8px 18px;
+  border-radius: 4px;
+  border: 1px solid #000;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.btn-login:hover {
+  background: #eee;
+}
+
+.btn-signup {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.btn-signup:hover {
+  background: #9b5f74;
+  border-color: #9b5f74;
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+  position: relative;
+  background-color: #3c2231;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 60px;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('https://w0.peakpx.com/wallpaper/255/267/HD-wallpaper-elegant-girl-brown-hair-makeup-beautiful-girl-black-dress.jpg') center/cover no-repeat;
+  opacity: 0.4;
+}
+
+.hero-content {
+  position: relative;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.hero-content p.category {
+  text-transform: uppercase;
+  color: #d9bcae;
+  font-size: 13px;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-content p.desc {
+  color: #c9c9c9;
+  font-size: 15px;
+  margin-bottom: 40px;
+  max-width: 480px;
+}
+
+/* ---------- SEARCH FORM ---------- */
+.search-box {
+  display: flex;
+  background: #fff;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  padding: 15px 20px;
+  outline: none;
+  font-size: 15px;
+  color: #555;
+}
+
+.search-box input+input {
+  border-left: 1px solid #ddd;
+}
+
+.search-box button {
+  background: #b46b7a;
+  color: #fff;
+  border: none;
+  padding: 0 30px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-box button:hover {
+  background: #9b5f74;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  .hero {
+    padding: 80px 30px;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .search-box {
+    flex-direction: column;
+    border-radius: 20px;
+  }
+
+  .search-box input+input {
+    border-left: none;
+    border-top: 1px solid #ddd;
+  }
+
+  .search-box button {
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+  }
+}
