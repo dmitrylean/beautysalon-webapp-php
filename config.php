@@ -5,10 +5,14 @@ return [
     'email' => 'name@example.com'
 ];
 
-$host = 'localhost'; // or database address from the hosting provider
-$db = 'my_database'; // database name
-$user = 'my_user'; // database login
-$pass = 'my_password'; // password
+$host = 'localhost';
+// or database address from the hosting provider
+$db = 'my_database';
+// database name
+$user = 'my_user';
+// database login
+$pass = 'my_password';
+// password
 $charset = 'utf8mb4';
 
 // PDO setup
@@ -20,7 +24,8 @@ $charset = 'utf8mb4';
 // ];
 
 try {
-    $pdo = new PDO($dsn, $user, $pass, $options);
-} catch (PDOException $e) {
-    exit('DB Connection failed: ' . $e->getMessage());
+    $pdo = new PDO( $dsn, $user, $pass, $options );
+} catch ( PDOException $e ) {
+    exit( 'DB Connection failed: ' . $e->getMessage() );
 }
+?>
