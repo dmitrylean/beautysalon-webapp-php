@@ -12,6 +12,10 @@ include __DIR__ . '/../includes/hero-services.php';
 ?>
 
 <?php
+include __DIR__ . '/../includes/experience-section.php';
+?>
+
+<?php
 require_once __DIR__ . '/../includes/services.php';
 echo Services(
     'Recommended',
