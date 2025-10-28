@@ -6,10 +6,10 @@
     </div>
 
       <div class="social-icons">
-          <a href="#">F</a>
-          <a href="#">T</a>
-          <a href="#">L</a>
-          <a href="#">I</a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
         </div>
 
       <div class="footer-columns">
@@ -48,6 +48,7 @@
     </div>
   </footer>
 <script src="/assets/js/main.js"></script>
+<script src="https://kit.fontawesome.com/a2e0e6c54d.js" crossorigin="anonymous"></script>
 </body>
 </html>
 

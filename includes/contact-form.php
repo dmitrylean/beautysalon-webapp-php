@@ -32,13 +32,12 @@
           <textarea placeholder="Any Note For Us"></textarea>
         </div>
 
-        <button type="submit">Submit</button>
+        <button class="btn-submit">Submit</button>
       </form>
     </div>
   </section>
- <script src="https://kit.fontawesome.com/a2e0e6c54d.js" crossorigin="anonymous"></script>
   <style>
-    .contact-section {
+  .contact-section {
       text-align: center;
       padding: 100px 20px;
     }
@@ -116,7 +115,7 @@
       font-size: 16px;
     }
 
-    .submit {
+    .btn-submit {
       background-color: #3a1e2b;
       color: #fff;
       padding: 14px;
@@ -129,7 +128,7 @@
       transition: background-color 0.25s ease;
     }
 
-    .submit:hover {
+    .btn-submit:hover {
       background-color: #5a2f44;
     }
 
