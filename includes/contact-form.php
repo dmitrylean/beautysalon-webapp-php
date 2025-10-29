@@ -106,7 +106,7 @@
       resize: vertical;
     }
 
-    .form-group i {
+    .form-group a {
       position: absolute;
       left: 15px;
       top: 50%;
